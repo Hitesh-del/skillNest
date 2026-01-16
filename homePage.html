@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillNest - Project Source Code Marketplace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="homePage.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-code"></i> SkillNest
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Project Library</a></li>
+                <li class="nav-item"><a href="#books" class="nav-link">Books</a></li>
+                <li class="nav-item"><a href="#blogs" class="nav-link">Blogs</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+            <div class="profile-dropdown">
+                <div class="profile-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-user-circle"></i>
+                        My Profile
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-folder"></i>
+                        My Projects
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                    <a href="#" class="dropdown-item sign-in">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Sign In
+                    </a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-badge">Premium Project Source Codes</div>
+            <h1 class="hero-title">Build Real Arduino, IoT & Robotics Projects</h1>
+            <p class="hero-subtitle">Access professionally crafted source codes, comprehensive documentation, and
+                step-by-step project guides to accelerate your learning journey</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">
+                    <i class="fas fa-folder-open"></i>
+                    Browse Projects
+                </a>
+                <a href="#samples" class="btn-secondary">
+                    <i class="fas fa-eye"></i>
+                    View Free Samples
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="categories-container">
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="category-title">Arduino Projects</h3>
+                    <p class="category-description">Access professionally crafted Arduino project source codes with
+                        detailed documentation and circuit diagrams</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="category-title">IoT Solutions</h3>
+                    <p class="category-description">Deploy customizable IoT project templates for smart homes,
+                        industries, and innovative applications</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="category-title">Robotics Systems</h3>
+                    <p class="category-description">Build advanced robotics projects with deployable and customizable
+                        systems for various applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Most Purchased Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Most Purchased Projects</h2>
+                <p class="section-subtitle">Get your hands on our most popular project source codes at an unbeatable
+                    price</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <img src="https://picsum.photos/seed/arduino1/400/300.jpg" alt="Project Image"
+                        class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Home Automation</h3>
+                        <p class="project-description">Control home appliances remotely using Arduino and IoT technology
+                            with complete source code</p>
+                        <div class="project-meta">
+                            <span class="project-price">₹50</span>
+                            <span class="project-badge">Bestseller</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn">Buy Now</button>
+                            <button class="btn btn-outline">Preview</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <img src="https://picsum.photos/seed/robot1/400/300.jpg" alt="Project Image" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Line Following Robot</h3>
+                        <p class="project-description">Build an autonomous robot with sensor calibration algorithms and
+                            pathfinding</p>
+                        <div class="project-meta">
+                            <span class="project-price">₹50</span>
+                            <span class="project-badge">Popular</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn">Buy Now</button>
+                            <button class="btn btn-outline">Preview</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <img src="https://picsum.photos/seed/iot1/400/300.jpg" alt="Project Image" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Station</h3>
+                        <p class="project-description">Real-time weather monitoring with temperature, humidity, and
+                            pressure sensors</p>
+                        <div class="project-meta">
+                            <span class="project-price">₹50</span>
+                            <span class="project-badge">New</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn">Buy Now</button>
+                            <button class="btn btn-outline">Preview</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <img src="https://picsum.photos/seed/arduino2/400/300.jpg" alt="Project Image"
+                        class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Security System</h3>
+                        <p class="project-description">Motion detection system with SMS alerts and PIR sensor
+                            integration</p>
+                        <div class="project-meta">
+                            <span class="project-price">₹50</span>
+                            <span class="project-badge">Top Rated</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn">Buy Now</button>
+                            <button class="btn btn-outline">Preview</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <img src="https://picsum.photos/seed/robot2/400/300.jpg" alt="Project Image" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Obstacle Avoider</h3>
+                        <p class="project-description">Intelligent robot with ultrasonic sensors and pathfinding
+                            algorithms</p>
+                        <div class="project-meta">
+                            <span class="project-price">₹50</span>
+                            <span class="project-badge">Trending</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn">Buy Now</button>
+                            <button class="btn btn-outline">Preview</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <img src="https://picsum.photos/seed/iot2/400/300.jpg" alt="Project Image" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Irrigation</h3>
+                        <p class="project-description">Automated irrigation system with soil moisture monitoring and IoT
+                        </p>
+                        <div class="project-meta">
+                            <span class="project-price">₹50</span>
+                            <span class="project-badge">Eco-Friendly</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn">Buy Now</button>
+                            <button class="btn btn-outline">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="#projects" class="btn btn-see-more">
+                    See More Projects
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- book section -->
+    <div class="section-header">
+        <h1>Our Featured Collection</h1>
+        <p>Scroll down to see more books</p>
+    </div>
+
+    <div class="books-container">
+        <div class="books-grid" id="booksGrid">
+            <div class="book-card">
+                <img src="https://picsum.photos/seed/1/300/400" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">Left Book</h3>
+                    <p class="book-price">$24.99</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <img src="https://picsum.photos/seed/2/300/400" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">Arduino Masterclass</h3>
+                    <p class="book-price">$29.99</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <img src="https://picsum.photos/seed/3/300/400" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">Right Book</h3>
+                    <p class="book-price">$34.99</p>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#all-books" class="btn-view-all">
+            View All Books
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="section blogs-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Featured Blogs</h2>
+                <p class="section-subtitle">Stay updated with the latest trends and tutorials in electronics and
+                    programming</p>
+            </div>
+            <div class="blogs-grid">
+                <div class="blog-card animate-on-scroll">
+                    <img src="https://picsum.photos/seed/blog1/400/250.jpg" alt="Blog Image" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-category">Arduino</span>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blog-title">Arduino Beginner's Guide: Getting Started</h3>
+                        <p class="blog-excerpt">Learn the fundamentals of Arduino programming and build your first
+                            project in this comprehensive beginner's guide...</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card animate-on-scroll">
+                    <img src="https://picsum.photos/seed/blog2/400/250.jpg" alt="Blog Image" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-category">IoT</span>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 12, 2023</span>
+                            <span><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3 class="blog-title">Top 10 Home IoT Projects You Can Build</h3>
+                        <p class="blog-excerpt">Discover the most innovative and practical IoT projects for smart homes
+                            that you can build this weekend...</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card animate-on-scroll">
+                    <img src="https://picsum.photos/seed/blog3/400/250.jpg" alt="Blog Image" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-category">Robotics</span>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 8, 2023</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3 class="blog-title">Educational Robotics: Teaching with Tech</h3>
+                        <p class="blog-excerpt">Explore how robotics is transforming education and learn about the best
+                            educational robot kits available...</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="#blogs" class="btn btn-see-more">
+                    Explore All Blogs
+                    <i class="fas fa-blog"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">What Our Users Say</h2>
+                <p class="section-subtitle">Join thousands of makers who trust SkillNest for their projects</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonials-wrapper">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">SkillNest helped me complete my IoT project with their excellent
+                            source codes and documentation. The quality is outstanding!</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/alex/100/100.jpg" alt="User Avatar"
+                                class="author-avatar">
+                            <div class="author-info">
+                                <h4>Alex Thompson</h4>
+                                <p>Electronics Engineering Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">As a robotics enthusiast, I found the project codes here to be
+                            well-structured and easy to understand. Highly recommended!</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/priya/100/100.jpg" alt="User Avatar"
+                                class="author-avatar">
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <p>Robotics Hobbyist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">The Arduino projects on SkillNest are perfect for teaching. My
+                            students love the hands-on approach and clear explanations.</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/marcus/100/100.jpg" alt="User Avatar"
+                                class="author-avatar">
+                            <div class="author-info">
+                                <h4>Marcus Johnson</h4>
+                                <p>Maker & Instructor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">Professional-grade code quality at an affordable price. SkillNest
+                            has become my go-to resource for project development.</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/liwei/100/100.jpg" alt="User Avatar"
+                                class="author-avatar">
+                            <div class="author-info">
+                                <h4>Li Wei</h4>
+                                <p>Hardware Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Duplicate cards for seamless loop -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">SkillNest helped me complete my IoT project with their excellent
+                            source codes and documentation. The quality is outstanding!</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/alex/100/100.jpg" alt="User Avatar"
+                                class="author-avatar">
+                            <div class="author-info">
+                                <h4>Alex Thompson</h4>
+                                <p>Electronics Engineering Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">As a robotics enthusiast, I found the project codes here to be
+                            well-structured and easy to understand. Highly recommended!</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/priya/100/100.jpg" alt="User Avatar"
+                                class="author-avatar">
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <p>Robotics Hobbyist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">The Arduino projects on SkillNest are perfect for teaching. My
+                            students love the hands-on approach and clear explanations.</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/marcus/100/100.jpg" alt="User Avatar"
+                                class="author-avatar">
+                            <div class="author-info">
+                                <h4>Marcus Johnson</h4>
+                                <p>Maker & Instructor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">Professional-grade code quality at an affordable price. SkillNest
+                            has become my go-to resource for project development.</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/seed/liwei/100/100.jpg" alt="User Avatar"
+                                class="author-avatar">
+                            <div class="author-info">
+                                <h4>Li Wei</h4>
+                                <p>Hardware Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+        <div class="section-container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Got Questions?</h2>
+                <p class="section-subtitle">Frequently Asked Questions - Everything you need to know about SkillNest
+                    projects</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>What types of projects are available on SkillNest?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            SkillNest offers a wide range of projects including Arduino-based electronics, IoT
+                            solutions, robotics systems, sensor integration projects, home automation systems, and much
+                            more. All projects come with complete source code and documentation.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>Are the source codes beginner-friendly?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes! Our projects are designed for all skill levels. We provide detailed documentation,
+                            circuit diagrams, and step-by-step instructions. Each project is clearly marked with
+                            difficulty level to help you choose appropriately.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>How do I access the project source code after purchase?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            After purchasing, you'll receive an instant download link via email. You can also access all
+                            your purchased projects anytime from your account dashboard under "My Projects" section.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>Do you provide support for the projects?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Absolutely! We provide comprehensive support through our community forum, email support, and
+                            detailed documentation. Our team is always ready to help you with any questions or issues.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>Can I use the purchased projects for commercial purposes?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            License terms vary by project. Most come with personal use license, but we also offer
+                            commercial licenses. Check the license details on each project page or contact us for custom
+                            licensing options.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We accept all major credit cards, debit cards, PayPal, UPI, and various international
+                            payment methods. All transactions are secured with industry-standard encryption.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-code"></i> SkillNest
+                    </div>
+                    <p class="footer-description">Your one-stop destination for high-quality project source codes,
+                        books, and resources to accelerate your learning journey.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Product</h3>
+                        <ul>
+                            <li><a href="#projects">Arduino Projects</a></li>
+                            <li><a href="#projects">IoT Solutions</a></li>
+                            <li><a href="#projects">Robotics Systems</a></li>
+                            <li><a href="#books">Books</a></li>
+                            <li><a href="#projects">Source Codes</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#blogs">Blog</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3 class="newsletter-title">Stay Updated</h3>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                        <button type="submit" class="newsletter-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 SkillNest. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="homePage.js"></script>
+</body>
+
+</html>
